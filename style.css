@@ -153,11 +153,23 @@ html, body {
 }
 
 .dark-section {
-    background-image: linear-gradient(to bottom,
-                    #156bc1,
-                    #0d3b6a
-                );
-    color: white;
+    background: linear-gradient(
+        to bottom,
+        #156bc1,
+        #102D50
+    );
+}
+
+/*.bg2 {
+    background: linear-gradient(
+        to bottom,
+        #103B46,
+        #092D40
+    );
+}*/
+
+.bg2 img {
+    border: white solid 2px;
 }
 
 .dark-menu {
@@ -344,5 +356,42 @@ background: linear-gradient(90deg,rgba(54, 142, 145, 1) 0%, rgba(57, 147, 237, 1
     flex-grow: 1;
     overflow-y: auto;
     line-height: 1.6;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3993ed;
+}
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
