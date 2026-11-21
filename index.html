@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>VarnaAquarium – Начало</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link rel="icon" href="images/fish.png" type="image/x-icon">
@@ -17,7 +17,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-lg rounded rounded-5 rounded-top-0 px-2 py-3 px-sm-0 py-sm-0">
         <div class="container py-3 py-lg-2">
-          <a class="navbar-brand" href="index.html"><span style="color: #5e9693;"><img src="images/logo-1.webp" alt="Varna Aquarium" width="150px"></a>
+          <a class="navbar-brand" href="index.html"><img src="images/logo-1.webp" alt="Varna Aquarium" width="150px"></a>
           <button 
             class="navbar-toggler text-light" 
             type="button"  
@@ -49,7 +49,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#">Контакти</a>
+                <a class="nav-link text-light fs-5" href="index.html#contacts">Контакти</a>
               </li>
               <li class="nav-item dropdown">
                 <a 
@@ -74,7 +74,7 @@
               </li>
             </ul>
             <div class="d-flex gap-3 mt-3 mt-lg-0">
-              <button style="--content: '➜] Вход';"href="https://twitter.com/kamildyrek" class="animated shadow-lg">
+              <button style="--content: '➜] Вход';"href="https://twitter.com/kamildyrek" class="animated shadow-lg" data-bs-toggle="modal" data-bs-target="#loginModal">
                 <div class="left"></div>
                   ➜] Вход
                 <div class="right"></div>
@@ -154,93 +154,98 @@
             <h2 class="h1 text-center mb-2" id="about-title">Как започва всичко?</h2>
             <div class="h6 text-center mb-5"><i class="bi bi-clock-history pe-2"></i>ИСТОРИЯТА НА ВАРНЕНСКИЯ АКВАРИУМ</div>
             <div class="row align-items-center">
-              <div class="col-xxl-5 text-center d-none d-xxl-block">
+              <div class="col-lg-5 text-center d-none d-lg-block">
                   <img src="images/photo.webp" alt="Изграждането на Аквариума" class="rounded" style="max-width: 500px;">
                   <div class="fs-5 text-center fw-bold text-light">
                     Изграждането на Аквариума <span class="d-block">1906 – 1911 г.</span>
                   </div>
               </div>
-              <div class="col-xxl-7">
+              <div class="col-lg-7">
                 <p class="fs-5">Аквариумът във Варна е център за популяризиране на черноморската флора и фауна. Той е част от Института по рибни ресурси, който извършва изследвания върху биоразнообразието и динамиката на рибните и нерибните ресурси в Черно море.</p>
                 <p class="fs-5">Създаден е по идея на <span class="fw-bold">княз Фердинанд</span>. Основният камък на сградата е положен на <span class="text-decoration-underline">22.10.1906 г.</span>, като на тържеството присъстват множество видни личности, сред които цялото царско семейство и министрите на просветата и на външните работи.</p>
-                <p class="fs-5">През 1911 г. сградата вече е изцяло построена, но началото на Балканската война през 1912 г. не дава възможност за завършване на обзавеждането ѝ. Настъпването на Първата световна война през 1915 г. отново прекратява развитието на Аквариума, а краят на войната нанася сериозни поражения и на вече построеното здание.</p>
+                <p class="fs-5 d-none">През 1911 г. сградата вече е изцяло построена, но началото на Балканската война през 1912 г. не дава възможност за завършване на обзавеждането ѝ. Настъпването на Първата световна война през 1915 г. отново прекратява развитието на Аквариума, а краят на войната нанася сериозни поражения и на вече построеното здание.</p>
                 <p class="fs-5">Аквариумът е открит официално през <span class="text-decoration-underline">1932 г.</span> от <span class="fw-bold">цар Борис III</span>, като тогава носи името <span class="fw-bold">Морска биологична станция.</span> Сградата и до днес е запазила оригиналната си функция.</p>
               </div>
             </div>
-            
           </div>
         </div>
      
-        <div class="bg2 text-light">
-          <div class="container pb-5 pt-3">
+        <div class="bg2 text-light" id="gallery">
+          <div class="container pb-5 pt-3 px-4 px-md-1">
             <h2 class="h1 text-center mb-2" id="gallery-title">Запечатани моменти</h2>
               <div class="h6 text-center mb-5"><i class="bi bi-camera pe-2"></i>КРАСОТАТА НА АКВАРИУМА, УЛОВЕНА В КАДРИ</div>
             <!-- Gallery -->
                 <div class="row">
-                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                  <div class="col-lg-4 col-md-12 mb-lg-4 mb-lg-0">
                     <div class="img-wrapper">
                       <img
                         src="images/aq1.webp"
-                        class="w-100 shadow-1-strong rounded mb-4 gallery-image"
+                        class="w-100 rounded mb-4 gallery-image"
                         alt="Boat on Calm Water"
                       />
-                      <div class="overlay">
-                        <div class="text">Hello World</div>
+                      <div class="overlay fs-5 rounded">
+                        <div class="text w-100 text-center">Сини дискуси</div>
+                        <div class="text-small w-100 text-center small"><i class="bi bi-camera pe-2"></i>А. Маринова, 06.05.2026 г.</div>
                       </div>
                     </div>
-                    <div class="img-wrapper">
+                    <div class="img-wrapper d-none d-lg-block">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                        class="w-100 shadow-1-strong rounded mb-4 gallery-image"
+                        src="images/fish_gal1.webp"
+                        class="w-100 rounded mb-4 gallery-image"
                         alt="Wintry Mountain Landscape"
                       />
-                      <div class="overlay">
-                        <div class="text">Hello World</div>
+                      <div class="overlay fs-5 rounded">
+                        <div class="text w-100 text-center">Морско конче</div>
+                        <div class="text-small2 w-100 text-center small"><i class="bi bi-camera pe-2"></i>Е. Георгиева, 22.04.2026 г.</div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="img-wrapper">
+                    <div class="img-wrapper d-none d-lg-block">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                        class="w-100 shadow-1-strong rounded mb-4 gallery-image"
+                        src="images/fish_gal.webp"
+                        class="w-100 rounded mb-4 gallery-image"
                         alt="Mountains in the Clouds"
                       />
-                      <div class="overlay">
-                        <div class="text">Hello World</div>
+                      <div class="overlay fs-5 rounded">
+                        <div class="text w-100 text-center">Златни рибки</div>
+                        <div class="text-small2 w-100 text-center small"><i class="bi bi-camera pe-2"></i>В. Апостолов, 12.02.2023 г.</div>
                       </div>
                     </div>
                     <div class="img-wrapper">
                       <img
                         src="images/aq2.webp"
-                        class="w-100 shadow-1-strong rounded mb-4 gallery-image"
+                        class="w-100 rounded mb-lg-4 gallery-image"
                         alt="Boat on Calm Water"
                       />
-                      <div class="overlay">
-                        <div class="text">Hello World</div>
+                      <div class="overlay fs-5 rounded">
+                        <div class="text w-100 text-center">Дискуси</div>
+                        <div class="text-small w-100 text-center small"><i class="bi bi-camera pe-2"></i>Н. Христова, 03.04.2024 г.</div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="col-lg-4 mb-lg-4 mb-lg-0">
                     <div class="img-wrapper">
                       <img
                         src="images/aq5.webp"
-                        class="w-100 shadow-1-strong rounded mb-4 gallery-image"
+                        class="w-100 rounded mb-4 gallery-image"
                         alt="Waves at Sea"
                       />
-                      <div class="overlay">
-                        <div class="text">Hello World</div>
+                      <div class="overlay fs-5 rounded">
+                        <div class="text w-100 text-center">Сиамска бойна риба</div>
+                        <div class="text-small w-100 text-center small"><i class="bi bi-camera pe-2"></i>К. Тодоров, 01.01.2026 г.</div>
                       </div>
                     </div>
-                    <div class="img-wrapper">
+                    <div class="img-wrapper d-none d-lg-block">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                        class="w-100 shadow-1-strong rounded mb-4 gallery-image"
+                        src="images/gal_fish2.webp"
+                        class="w-100 rounded mb-4 gallery-image"
                         alt="Yosemite National Park"
                       />
-                      <div class="overlay">
-                        <div class="text">Hello World</div>
+                      <div class="overlay fs-5 rounded">
+                        <div class="text w-100 text-center">Лироопашат антиас</div>
+                        <div class="text-small2 w-100 text-center small"><i class="bi bi-camera pe-2"></i>Г. Манолова, 14.03.2022 г.</div>
                       </div>
                     </div>
                   </div>
@@ -249,40 +254,6 @@
           </div>
         </div>
       </div>
-        
-          <!-- <div class="container text-light py-5 px-4 px-md-1" id="gallery">
-            <h2 class="h1 text-center mb-2" id="gallery-title">Запечатани моменти</h2>
-            <div class="h6 text-center mb-5">КРАСОТАТА НА АКВАРИУМА, УЛОВЕНА В КАДРИ</div>
-              <div class="row g-3">
-                <div class="col-3 py-4 d-none d-md-block">
-                    <img src="images/aquarium.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish1.webp" alt="снимка">
-                </div>
-                <div class="col-12 col-md-6">
-                    <img src="images/aq1.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish2.webp" alt="снимка">
-                </div>
-                <div class="col-3 pt-5 pb-md-4 d-none d-md-block">
-                    <img src="images/aq2.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish3.webp" alt="снимка">
-                </div>
-                <div class="col-12 col-md-5 pb-md-4">
-                    <img src="images/aq4.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish4.webp" alt="снимка">
-                </div>
-                <div class="col-3 py-5 d-none d-md-block">
-                    <img src="images/aq5.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish5.webp" alt="снимка">
-                </div>
-                <div class="col-4 pt-4 d-none d-md-block">
-                    <img src="images/aq3.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish6.webp" alt="снимка">
-                </div>
-                <div class="col-3 pb-5 d-none d-md-block">
-                    <img src="images/aq7.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish7.webp" alt="снимка">
-                </div>
-                <div class="col-12 col-md-6 pt-md-4">
-                    <img src="images/aq6.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish8.webp" alt="снимка">
-                </div>
-                <div class="col-3 pb-4 d-none d-md-block">
-                    <img src="images/aq8.webp" class="img-fluid w-100 shadow-sm fish-img rounded" data-img="images/datafish9.webp" alt="снимка">
-                </div>
-            </div>
-          </div> -->
           <div class="bg-grad2">
             <div class="container text-light py-5 px-4 px-md-1" id="reviews">
             <h2 class="h1 text-center mb-2" id="reviews-title">Споделени мнения</h2>
@@ -295,9 +266,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human1.webp"  alt="Елена Петрова" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human1.webp"  alt="Елена Петрова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Елена Петрова</div>
                             <div class="fs-5">Графичен дизайнер</div>
                             <small class="text-muted">22.10.2023 г.</small>
@@ -317,9 +288,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human2.webp"  alt="Мартина Георгиева" class="img-fluid rounded-circle" width="130px" height="130px">
+                            <img src="images/human2.webp"  alt="Мартина Георгиева" class="img-fluid rounded-circle shadow" width="130px" height="130px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Мартина Георгиева</div>
                             <div class="fs-5">Инфлуенсър</div>
                             <small class="text-muted">12.11.2026 г.</small>
@@ -340,9 +311,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human3.webp"  alt="Марин Димитров" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human3.webp"  alt="Марин Димитров" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Марин Димитров</div>
                             <div class="fs-5">Екскурзовод</div>
                             <small class="text-muted">13.12.2025 г.</small>
@@ -366,9 +337,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human4.webp"  alt="Даниела Иванова" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human4.webp"  alt="Даниела Иванова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Даниела Иванова</div>
                             <div class="fs-5">Пианист</div>
                             <small class="text-muted">16.05.2026 г.</small>
@@ -388,9 +359,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human6.webp"  alt="Благомир Коцев" class="img-fluid rounded-circle" width="130px" height="130px">
+                            <img src="images/human6.webp"  alt="Благомир Коцев" class="img-fluid rounded-circle shadow" width="130px" height="130px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Благомир Коцев</div>
                             <div class="fs-5">Кмет на град Варна</div>
                             <small class="text-muted">28.11.2025 г.</small>
@@ -411,9 +382,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human5.webp"  alt="Мила Николова" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human5.webp"  alt="Мила Николова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Мила Николова</div>
                             <div class="fs-5">Библиотекар</div>
                             <small class="text-muted">03.03.2023 г.</small>
@@ -437,10 +408,10 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human7.webp"  alt="Александра Маринова" class="img-fluid rounded-circle" width="100px" height="100px" >
+                            <img src="images/human7.webp"  alt="Елена Петрова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
-                          <div class="col">
-                            <div class="fs-4 fw-bold">Александра Маринова</div>
+                          <div class="col-12 col-xl">
+                            <div class="fs-4 fw-bold">Елена Петрова</div>
                             <div class="fs-5">Частен детектив</div>
                             <small class="text-muted">06.05.2026 г.</small>
                           </div>
@@ -459,9 +430,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human9.webp"  alt="Иван Портних" class="img-fluid rounded-circle" width="130px" height="130px">
+                            <img src="images/human9.webp"  alt="Иван Портних" class="img-fluid rounded-circle shadow" width="130px" height="130px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Иван Портних</div>
                             <div class="fs-5">Бивш кмет на град Варна</div>
                             <small class="text-muted">24.05.2024 г.</small>
@@ -482,9 +453,9 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human8.webp"  alt="Кристиян Тодоров" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human8.webp"  alt="Кристиян Тодоров" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
-                          <div class="col">
+                          <div class="col-12 col-xl">
                             <div class="fs-4 fw-bold">Кристиян Тодоров</div>
                             <div class="fs-5">Барман</div>
                             <small class="text-muted">01.01.2026 г.</small>
@@ -503,6 +474,14 @@
                   </div>
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
             <!-- -->
             <div id="carouselExample2" class="carousel slide d-lg-none" data-bs-ride="carousel">
@@ -512,7 +491,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human1.webp"  alt="Елена Петрова" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human1.webp"  alt="Елена Петрова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Елена Петрова</div>
@@ -536,7 +515,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human2.webp"  alt="Мартина Георгиева" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human2.webp"  alt="Мартина Георгиева" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Мартина Георгиева</div>
@@ -561,7 +540,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human3.webp"  alt="Марин Димитров" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human3.webp"  alt="Марин Димитров" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Марин Димитров</div>
@@ -585,7 +564,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human4.webp"  alt="Даниела Иванова" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human4.webp"  alt="Даниела Иванова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Даниела Иванова</div>
@@ -609,7 +588,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human6.webp"  alt="Благомир Коцев" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human6.webp"  alt="Благомир Коцев" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Благомир Коцев</div>
@@ -634,7 +613,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human5.webp"  alt="Мила Николова" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human5.webp"  alt="Мила Николова" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Мила Николова</div>
@@ -658,7 +637,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human7.webp"  alt="Александра Маринова" class="img-fluid rounded-circle" width="100px" height="100px" >
+                            <img src="images/human7.webp"  alt="Александра Маринова" class="img-fluid rounded-circle shadow" width="100px" height="100px" >
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Александра Маринова</div>
@@ -682,7 +661,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human9.webp"  alt="Иван Портних" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human9.webp"  alt="Иван Портних" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Иван Портних</div>
@@ -707,7 +686,7 @@
                       <div class="card-body">
                         <div class="row pb-4 pt-3">
                           <div class="col-auto">
-                            <img src="images/human8.webp"  alt="Кристиян Тодоров" class="img-fluid rounded-circle" width="100px" height="100px">
+                            <img src="images/human8.webp"  alt="Кристиян Тодоров" class="img-fluid rounded-circle shadow" width="100px" height="100px">
                           </div>
                           <div class="col">
                             <div class="fs-4 fw-bold">Кристиян Тодоров</div>
@@ -727,30 +706,245 @@
                     </div>
                   </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
+          <div class="bg-navy1" id="contacts">
+          <div class="container py-5 px-4 px-md-1 text-light">
+            <h2 class="h1 text-center mb-2" id="contacts-title">Свържи се с нас</h2>
+              <div class="h6 text-center mb-5"><i class="bi bi-check2-all pe-2"></i>ЩЕ ОТГОВОРИМ НА ТВОИТЕ ВЪПРОСИ</div>
+            <div class="card border-0 bg-transparent">
+              <div class="card-body px-0">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 order-1 order-lg-0">
+                    <form action="" class="px-lg-4">
+                      <div class="row mb-4 mb-lg-5">
+                        <div class="col-12">
+                          <label for="" class="form-label text-light fs-5">Име</label>
+                          <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+                            <input type="text" class="form-control" placeholder="Твоето име" aria-label="Твоето име" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-xl-5">
+                        <div class="col-xl-6 mb-4 mb-xl-0">
+                          <label for="" class="form-label text-light fs-5">Телефон</label>
+                          <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone"></i></span>
+                            <input type="phone" class="form-control" placeholder="Твоят телефон" aria-label="Твоят телефон" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-xl-6 mb-4 mb-xl-0">
+                          <label for="" class="form-label text-light fs-5">Имейл</label>
+                          <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Твоят имейл" aria-label="Твоят имейл" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <label for="" class="form-label text-light fs-5">Твоето съобщение</label>
+                      <textarea name="" id="" rows="6" class="form-control fs-5 text-muted">Твоето запитване...</textarea>
+                      <div class="d-grid d-lg-block">
+                        <button type="submit" class="btn btn-lg btn-primary rounded-pill mt-4 px-4 py-3"><i class="bi bi-send pe-2"></i>Изпрати</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.5376740792035!2d27.919782911732536!3d43.20131267100702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a453993d5227b7%3A0xb25b52f22d97d654!2z0JLQsNGA0L3QtdC90YHQutC4INCw0LrQstCw0YDQuNGD0Lw!5e1!3m2!1sbg!2sbg!4v1795267399907!5m2!1sbg!2sbg" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="rounded map-frame"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
     </main>
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" data-bs-theme="dark">
+    <footer class="bg-navy text-light mt-auto py-5" data-bs-theme="dark">
+      <div class="container text-center">
+        <a class="" href="index.html"><img src="images/logo-1.webp" alt="Varna Aquarium" width="150px"></a>
+        <div class="d-flex justify-content-center gap-3 mb-4 fs-4 mt-3">
+          <a class="link-light" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a class="link-light" href="#" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          <a class="link-light" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="link-light" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <ul class="list-inline mb-3 fs-5 d-none d-lg-block">
+          <li class="list-inline-item"><a class="link-light text-decoration-none" href="index.html#hero">Начало</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="#">Новини</a></li>
+          <li class="list-inline-item"><a class="link-light text-decoration-none" href="#">Експозиции</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="#">Програми</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="#">Посещения</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="index.html#contacts">Контакти</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="index.html#about">История</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="index.html#gallery">Галерия</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="index.html#reviews">Отзиви</a></li>
+        </ul>
+        <div class="row d-lg-none mb-4">
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="index.html#hero">Начало</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Новини</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Експозиции</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Програми</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Посещения</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="index.html#contacts">Контакти</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="index.html#about">История</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="index.html#gallery">Галерия</a></div>
+          <div class="col-6 col-sm-4"><a class="link-light text-decoration-none" href="index.html#reviews">Отзиви</a></div>
+        </div>
+        <span class="text-body-secondary fs-5">Вероника Ненкова &copy; 2026. Всички права запазени.</span>
+      </div>
+    </footer>
+
+
+    <div class="offcanvas offcanvas-start rounded rounded-5 rounded-start-0" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title h3" id="offcanvasWithBothOptionsLabel"><i class="bi bi-bell-fill pe-2"></i>Моите известия</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 class="offcanvas-title h3 text-light" id="offcanvasWithBothOptionsLabel"><i class="bi bi-bell-fill pe-2"></i>Моите известия</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div class="alert alert-info fs-6 fw-semibold">
-          Благодарим Ви за оставения отзив! Вашето мнение е важно за нас.
-          <small class="text-end d-block mt-3">От Администратор, 20.11.2026 г.</small>
+        <div class="card mb-3">
+          <div class="card-body fw-semibold">
+            Благодарим ти за оставения отзив! Твоето мнение е важно за нас.
+          </div>
+          <div class="card-footer text-end">
+            <small class="fw-semibold">От Администратор, 20.11.2026 г.</small>
+          </div>
         </div>
-        <div class="alert alert-info fs-6 fw-semibold">
-          Беше извършено влизане във Вашия профил от ново устройство. Ако това сте били Вие, не е нужно да предприемате никакви действия.
-          <small class="text-end d-block mt-3">От Система, 16.11.2026 г.</small>
+        <div class="card mb-3">
+          <div class="card-body fw-semibold">
+            Беше извършено влизане във твоя профил от ново устройство. Ако това си бил ти, не е нужно да предприемаш никакви действия.
+          </div>
+          <div class="card-footer text-end">
+            <small class="fw-semibold">От Система, 16.11.2026 г.</small>
+          </div>
         </div>
-        <div class="alert alert-info fs-6 fw-semibold">
-          Добре дошли на борда на VarnaAquarium! Можете лесно да преглеждате историята на своите посещения, наличните си ваучери, както и да ни изпращате снимки през Вашия профил.
-          <small class="text-end d-block mt-3">От Система, 14.11.2026 г.</small>
+        <div class="card">
+          <div class="card-body fw-semibold">
+            Добре дошъл на борда на VarnaAquarium! Можеш лесно да преглеждаш историята на своите посещения, наличните си ваучери, както и да ни изпращаш снимки през твоя профил.
+          </div>
+          <div class="card-footer text-end">
+            <small class="fw-semibold">От Система, 14.11.2026 г.</small>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content fs-5">
+        <div class="modal-header grad-modal">
+          <h5 class="modal-title text-light fw-bold">Данни за вход</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container">
+            <div class="mb-3">
+              <label class="form-label">Имейл адрес</label>
+              <div class="input-group">
+                <input type="email" class="form-control fw-semibold" placeholder="Въведи своя имейл адрес">
+                <span class="input-group-text">
+                    <i class="bi bi-envelope"></i>
+                  </span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Парола</label>
+              <div class="input-group">
+                <input type="password" class="form-control fw-semibold" placeholder="Въведи своята парола">
+                <span class="input-group-text password-toggle">
+                   <i class="bi bi-lock"></i>
+                  </span>
+              </div>
+            </div>
+            <div class="form-check">
+              <div class="row justify-content-between">
+                <div class="col-6">
+                  <input type="checkbox" class="form-check-input" id="remember">
+                  <label class="form-check-label" for="remember">Запомни ме</label>
+                </div>
+                <div class="col-6 text-end">
+                  <a href="#" class="text-decoration-none">Забравена парола?</a>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 fs-5 my-3 fw-bold"><i class="bi bi-box-arrow-in-right pe-2"></i>ВПИШИ СЕ</button>
+            <div class="text-center mb-3">
+              <span>или влез с</span>
+            </div>
+            <div class="d-flex gap-2 justify-content-center">
+                <button type="button" class="btn btn-outline-primary fw-semibold">
+                  <i class="bi bi-google pe-2"></i>Google
+                </button>
+                <button type="button" class="btn btn-outline-primary fw-semibold">
+                  <i class="bi bi-facebook pe-2"></i>Facebook
+                </button>
+            </div>
+            <div class="register-link text-center mt-3">
+              Нямаш акаунт? <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#regModal">Регистрирай се сега!</a>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="regModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content fs-5">
+        <div class="modal-header grad-modal">
+          <h5 class="modal-title text-light fw-bold">Регистрация</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container">
+            <div class="mb-3">
+              <label class="form-label">Имейл адрес</label>
+              <div class="input-group">
+                <input type="email" class="form-control fw-semibold" placeholder="Въведи своя имейл адрес">
+                <span class="input-group-text">
+                    <i class="bi bi-envelope"></i>
+                  </span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Парола</label>
+              <div class="input-group">
+                <input type="password" class="form-control fw-semibold" placeholder="Въведи своята парола">
+                <span class="input-group-text password-toggle">
+                   <i class="bi bi-lock"></i>
+                  </span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Повтори паролата</label>
+              <div class="input-group">
+                <input type="password" class="form-control fw-semibold" placeholder="Повтори своята парола">
+                <span class="input-group-text password-toggle">
+                   <i class="bi bi-shield-lock"></i>
+                  </span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 fs-5 my-3 fw-bold"><i class="bi bi-person-plus pe-2"></i>РЕГИСТРИРАЙ СЕ</button>
+            <div class="alert alert-info small fw-semibold"><i class="bi bi-exclamation-triangle pe-2"></i>След регистрация ще ти бъде изпратен имейл с линк за потвърждение. Последвай линка и ще имаш пълен достъп до акаунта си!</div>
+            <div class="register-link text-center mt-3">
+              Вече имаш акаунт? <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Влез сега!</a>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
         const fishes = document.querySelectorAll('.fishes, .fish-extra');
