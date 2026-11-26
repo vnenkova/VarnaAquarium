@@ -39,6 +39,22 @@
   letter-spacing: 3px;
 }
 
+.bd-callout-info {
+    --bd-callout-color: var(--bs-info-text-emphasis);
+    --bd-callout-bg: var(--bs-info-bg-subtle);
+    --bd-callout-border: var(--bs-info-border-subtle);
+}
+.bd-callout {
+    --bs-link-color-rgb: var(--bd-callout-link);
+    --bs-code-color: var(--bd-callout-code-color);
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--bd-callout-color, inherit);
+    background-color: var(--bd-callout-bg, var(--bs-gray-100));
+    border-left: .25rem solid var(--bd-callout-border, var(--bs-gray-300));
+}
+
 :root {
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, .4);
@@ -311,7 +327,7 @@ html {
 .bg-navy {
   background-color: #040a1b !important;
 }
-#about-title, #gallery-title, #reviews-title, #contacts-title, #expos-title {
+#about-title, #gallery-title, #reviews-title, #contacts-title, #expos-title, #facts-title {
   padding: 30px 0 8px;
   position: relative;
   isolation: isolate;
@@ -329,7 +345,7 @@ html {
   z-index: -1;
 }
 
-#contacts-title::before {
+#contacts-title::before, #facts-title::before {
   content: "";
   position: absolute;
   left: 38%;

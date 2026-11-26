@@ -61,7 +61,7 @@
                   Още
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark dark-menu dropdown-menu-start mt-0 mt-lg-4 mb-3 mb-lg-0 shadow-lg">
-                  <li><a class="dropdown-item fs-5 text-light" href="#">Новини</a></li>
+                  <li><a class="dropdown-item fs-5 text-light" href="news.html">Новини</a></li>
                   <li><a class="dropdown-item fs-5 text-light" href="#">Експозиции</a></li>
                   <li><a class="dropdown-item fs-5 text-light" href="#">Програми</a></li>
                   <li><a class="dropdown-item fs-5 text-light" href="#">Посещения</a></li>
@@ -89,13 +89,15 @@
         </div>
       </nav>
       <!-- Navbar -->
+    </header>
 
       <!--Section: Design Block-->
       
       <section class="dark-section">
-        <div class="container py-5">
+      <!-- <div class="bg-grad2"> -->
+        <div class="container pt-5 pb-3 px-4">
             <div class="text-center my-5">
-                <h1 class="text-light mb-2" id="expos-title">
+                <h1 class="text-light mb-2 pt-5" id="expos-title">
                     Нашите експозиции
                 </h1>
                 <div class="h6 text-light">
@@ -118,7 +120,7 @@
                                     <h5 class="card-title fw-bold h4">
                                         Жива музейна експозиция
                                     </h5>
-                                    <a href="#"
+                                    <a href="#expo1"
                                        class="btn btn-primary btn-lg mt-3">
                                         Разгледай<i class="bi bi-arrow-right ps-2"></i>
                                     </a>
@@ -141,7 +143,7 @@
                                     <h5 class="card-title fw-bold h4">
                                         Препарирана музейна експозиция
                                     </h5>
-                                    <a href="#"
+                                    <a href="#expo2"
                                        class="btn btn-primary btn-lg mt-3">
                                         Разгледай<i class="bi bi-arrow-right ps-2"></i>
                                     </a>
@@ -151,11 +153,173 @@
                     </div>
                 </div>
             </div>
+            <h2 class="h2 mb-4 fw-bold mt-5 pt-5 pb-4 text-light text-center"><i class="bi bi-patch-question pe-2"></i>Често задавани въпроси</h2>
+            <div class="accordion mt-4 mb-5" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fs-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1. Какви животни могат да се видят в живата експозиция?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fs-5">
+                    В живата експозиция посетителите могат да се запознаят с разнообразни морски обитатели на Черно море – различни видове риби, медузи, ракообразни и други интересни морски създания.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2. Каква е разликата между живата и препарираната експозиция?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fs-5">
+                    Живата експозиция представя морските обитатели в тяхната естествена среда, докато препарираната експозиция позволява да се разгледат отблизо техните външни особености, форма и структура.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. Могат ли да се видят редки и защитени видове?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fs-5">
+                    Да, препарираната експозиция може да представя и редки или защитени видове, които имат важно значение за биоразнообразието на Черно море.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fs-4 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    4. Подходящи ли са експозициите за деца?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body fs-5">
+                    Разбира се! Експозициите предлагат интересна възможност за децата да научат повече за морския свят, неговите обитатели и необходимостта от опазване на природата.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="bg-grad2">
+          <div class="container py-5 px-4">
+            <div class="row pb-4 pt-5 mb-lg-5 text-light align-items-start justify-content-center" id="expo1">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="h2 pb-5 fw-bold mt-4 mt-lg-0 d-lg-none text-center">Жива музейна експозиция</h2>
+                <img src="images/expos1.webp" alt="Жива музейна експозиция" class="img-fluid rounded">
+              </div>
+              <div class="col-lg-6">
+                <h2 class="h2 mb-4 fw-bold mt-4 mt-lg-0 d-none d-lg-block">Жива музейна експозиция</h2>
+                <div class="fs-5 mb-lg-4 pb-lg-4" >
+                  Разгледай отблизо обитателите на Черно море и се потопи в едно вълнуващо пътешествие сред пъстри цветове, необикновени морски създания и живот под повърхността на водата. Всяка среща разкрива нова страна от богатството на морето и неговата удивителна природа.
+                </div>
+                <div class="bd-callout bd-callout-info rounded py-4 d-none d-xxl-block">
+                  <div class="h2 fw-bold mb-3"><i class="bi bi-question-circle pe-2"></i>Какво да очакваш:</div>
+                  <div class="row gap-2 px-3">
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Морски дракон</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Медузи "Аурелия"</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Морска котка</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Морски скорпион</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Черноморкса акула</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Медузи "Корнерот"</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 d-xxl-none">
+                  <div class="bd-callout bd-callout-info rounded py-4">
+                  <div class="h2 fw-bold mb-3"><i class="bi bi-question-circle pe-2"></i>Какво да очакваш:</div>
+                  <div class="row gap-2 px-3">
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Морски дракон</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Медузи "Аурелия"</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Морска котка</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Морски скорпион</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Черноморкса акула</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Медузи "Корнерот"</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row pb-5 text-light align-items-start justify-content-center" id="expo2">
+              <div class="col-lg-6">
+                <h2 class="h2 mb-4 fw-bold mt-4 mt-lg-0 d-none d-lg-block">Препарирана музейна експозиция</h2>
+                <div class="fs-5 mb-lg-4 pb-lg-4 d-none d-lg-block" >
+                  Разгледай разнообразието от морски обитатели, съхранени в своите естествени форми, и научи повече за техните особености, начин на живот и място в природата. Всичко това ще ти разкрие още повече тайни за необятния свят на Черно море.
+                </div>
+                <div class="bd-callout bd-callout-info rounded py-4 d-none d-xxl-block">
+                  <div class="h2 fw-bold mb-3"><i class="bi bi-question-circle pe-2"></i>Какво да очакваш:</div>
+                  <div class="row gap-2 px-3">
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Тюлен монах</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Делфин</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Муткур</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Корморан</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Естерова риба</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Океански костенурки</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Риба меч</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="h2 pb-5 fw-bold mt-4 mt-lg-0 d-lg-none text-center">Препарирана музейна експозиция</h2>
+                <img src="images/expos2.webp" alt="Препарирана музейна експозиция" class="img-fluid rounded">
+              </div>
+              <div class="col-12 d-xxl-none">
+                <div class="fs-5 mb-lg-4 pb-lg-4 d-lg-none" >
+                  Разгледай разнообразието от морски обитатели, съхранени в своите естествени форми, и научи повече за техните особености, начин на живот и място в природата. Всичко това ще ти разкрие още повече тайни за необятния свят на Черно море.
+                </div>
+                  <div class="bd-callout bd-callout-info rounded py-4">
+                  <div class="h2 fw-bold mb-3"><i class="bi bi-question-circle pe-2"></i>Какво да очакваш:</div>
+                  <div class="row gap-2 px-3">
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Тюлен монах</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Делфин</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Муткур</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Корморан</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Естерова риба</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Океански костенурки</span>
+                    <span class="badge text-bg-light fs-6 w-auto shadow-sm">Риба меч</span>
+                  </div>
+                </div>
+              </div>
+            </div>  
         </div>
+      </div>
       </section>
-
-    
-    </header>
+      <div class="bg-navy1">
+        <div class="container text-light py-5 px-4">
+          <h2 class="h1 text-center mb-2" id="facts-title">Знаеш ли, че?</h2>
+          <div class="h6 text-center mb-5"><i class="bi bi-info-circle pe-2"></i>ИНТЕРЕСНИ ФАКТИ ЗА МОРСКИТЕ ОБИТАТЕЛИ</div>
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img src="images/faq1.webp" class="card-img-top" alt="делфини">
+                <div class="card-body">
+                  <p class="card-text fs-5">В Черно море живеят три вида китоподни – обикновен делфин, афала и муткур.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img src="images/faq2.webp" class="card-img-top" alt="рапан">
+                <div class="card-body">
+                  <p class="card-text fs-5">Рапанът е хищен морски охлюв, който се храни с миди и други по-дребни охлюви.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img src="images/faq3.webp" class="card-img-top" alt="морска котка">
+                <div class="card-body fs-5">
+                  <p class="card-text">Известен е случай, в който морска котка от Черно море е пробила ботуша на рибар с костния си шип.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <main>
       
     </main>
@@ -171,8 +335,8 @@
         </div>
         <ul class="list-inline mb-3 fs-5 d-none d-lg-block">
           <li class="list-inline-item"><a class="link-light text-decoration-none" href="index.html#hero">Начало</a></li>
-          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="#">Новини</a></li>
-          <li class="list-inline-item"><a class="link-light text-decoration-none" href="#">Експозиции</a></li>
+          <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="news.html">Новини</a></li>
+          <li class="list-inline-item"><a class="link-light text-decoration-none" href="expos.html">Експозиции</a></li>
           <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="#">Програми</a></li>
           <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="#">Посещения</a></li>
           <li class="list-inline-item mx-3"><a class="link-light text-decoration-none" href="index.html#contacts">Контакти</a></li>
@@ -182,8 +346,8 @@
         </ul>
         <div class="row d-lg-none mb-4">
           <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="index.html#hero">Начало</a></div>
-          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Новини</a></div>
-          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Експозиции</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="news.html">Новини</a></div>
+          <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="expos.html">Експозиции</a></div>
           <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Програми</a></div>
           <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="#">Посещения</a></div>
           <div class="col-6 col-sm-4 mb-3"><a class="link-light text-decoration-none" href="index.html#contacts">Контакти</a></div>
@@ -196,7 +360,7 @@
     </footer>
 
 
-    <div class="offcanvas offcanvas-start rounded rounded-5 rounded-start-0" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas offcanvas-start border-white rounded rounded-5 rounded-start-0" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title h3 text-light" id="offcanvasWithBothOptionsLabel"><i class="bi bi-bell-fill pe-2"></i>Моите известия</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
